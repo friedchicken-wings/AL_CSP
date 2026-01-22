@@ -1,4 +1,13 @@
+name = input("Tell me a name: ")
 
-name = "Tia" 
+subject = "Computer Science"
 
-print(name)
+time = 11
+
+pi=3.14
+
+print (name, "is a cool name.")
+
+print("Katie", "Jake")
+
+print(1021684032)
