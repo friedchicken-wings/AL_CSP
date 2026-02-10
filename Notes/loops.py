@@ -1,5 +1,5 @@
 import random
-"""start = 0
+start = 0
 
 while start < 21:
     print(start)
@@ -14,7 +14,7 @@ while count != goose:
     print("Duck")
     count += 1
 
-print("GOOSE!")"""
+print("GOOSE!")
 
 number = random.randint(1,25)
 
