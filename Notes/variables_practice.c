@@ -4,8 +4,8 @@
 int main(){
     int number = 7;
     char name[] = "Audrey";
-    float number = 3.9;
-    char name[] = "Boiled eggs";
+    float decimal = 3.9;
+    char breakfast[] = "Boiled eggs";
     char color[] = "Navy blue";
     char school[] = "UCAS";
     int year = 2026;
@@ -13,5 +13,7 @@ int main(){
     int age = 15;
     char subject[] = "History";
 
-    printf()
+    printf("%d, %s, %.1f, %s, %s, %s, %d, %s, %d, %s", number, name, decimal, breakfast, color, school, year, eye, age, subject);
+
+    return 0;
 }
