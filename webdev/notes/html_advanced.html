@@ -3,14 +3,14 @@
     <head>
         <title>Advanced Notes on HTML</title>
         <meta charset="UTF-8">
-    </head>
-    <body>
+         <!-- embeded CSS goes inside of the head tags, using the <style> tag-->
+             <body>
         <h1>HTML Advanced Notes</h1>
-        <div height="200px" width="200px" style="background-color: blueviolet; height: 100px; width:100px">
+        <div height="200px" width="200px" style="background-color: violet; height: 100px; width:100px">
             <p>Div content</p>
         </div>
         <div id="ordered-lists">
-        <p>This is how you make an ordered (numbered) list</p>
+        <p>This is how you make <span id="bolded"></span> an ordered (numbered) list</p>
         <ol>
             <li>Programming 2</li>
             <li>Programming 2</li>
@@ -19,7 +19,7 @@
         </ol>
         </div>
         <br>
-        <div id="unordered lists"
+        <div id="unordered lists"></div>
         <p>This is how you create an unordered (bulleted) list</p>
         <ul style="list-style-type:circle">
             <li>Apple</li>
@@ -28,27 +28,29 @@
             <li>Peach</li>
             <li>Grape</li>
         </ul>
-        <a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank">W3schools Unordered lists</a>
-        <img src="https://ctfassets.ksldigital.com/0wjmk6wgfops/5JD8w0POZhQ" alt="Mount Timpaogos in the fall?">
-        <img src="https://upload.wikimedia.orglwikipedia/commons/1/12/Mount_Timpanogos_-_01-07-08.jpg" alt="timp in the winter" hegiht="200px">
-    </body>
-</html>
-        <!-- embeded CSS goes inside of the head tags, using the <style> tag-->
+        <link href="@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap')" rel="stylesheet">
+</style>
             <style>
-                *{
-                    background-color: rgb(156, 69, 37);
+                body{
+                    background-color: cyan;
+                    font-family: papyrus, 'Franklin Gothic Medium', fantasy;
                 }
                 p{
                     background-color: burlywood;
                     color:rgba(15, 105, 15, 0.589);
                     text-align: right;
                     font-size: 1em;
+                    font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                     font-weight: <weight>;
+                    font-style: normal;
 
 
                 }
                 #ordered-list{
-                    background-color: crimson;
+                    background-color: aquamarine;
                     color: green;
+                    margin-right: 10px
                 }
                 .odd{
                     background-color: green;
@@ -56,12 +58,60 @@
                 }
                 h1{
                     text-align: center;
-                    color: #e6e6ff;
+                    color: violet;
+                    border: 2px solid yellow;
+                    font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 }
                 img{
                     width: 50%;
                 }
+                #unordered{
+                    font-family: papyrus, fantasy;
+                }
+                #bolded{
+                    font-weight: bolder;
+                }
+                #heading{
+                    font-style: italic;
+                    font-variant: small-caps;
+                }
+                #box{
+                    background-color: hotpink; 
+                    height: 100px; 
+                    width:100px
+                    text-align: center;
+                    margin: 20px;
+                    padding-top: 20px;
+                }
+                #box-wrapper{
+                    display: flex;
+                    justify-content: center;
+                }
+                p{
+                    background-color: black;
+                    color: aqua;
+                    background-color: yellow;
+                    font-size: 1em;
+                }
+                .list-wrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .images{
+                    display: block;
+                    margin: auto;
+                    width: 50%;
+                }
             </style>
+    </head>
+    <body>
+        <a href="https://www.imdb.com/title/tt0094715/" target="_blank"></a>
+        <img src= "https://www.katebackdrop.com/products/bh1044050-crashing-waves-beach-sunset?srsltid=AfmBOoppXjHw_1c41ru_Rb-laiep9rmYNxdM7h75NGrvptqxJfz4cHSOalt" alt="Really pretty beach" height="200px">
+       <div class="images">
+            <img src= "https://www.katebackdrop.com/products/bh1044050-crashing-waves-beach-sunset?srsltid=AfmBOoppXjHw_1c41ru_Rb-laiep9rmYNxdM7h75NGrvptqxJfz4cHSOalt" alt="Really pretty beach" height="200px">
+       </div>
+    </body>
+</html>
     </head>
     <body>
         <h1>HTML Advanced Notes</h1>
