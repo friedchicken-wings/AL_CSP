@@ -98,18 +98,26 @@
                     flex-wrap: wrap;
                 }
                 .images{
-                    display: block;
+                    display: None;
                     margin: auto;
                     width: 50%;
                 }
             </style>
+            <script>
+                function show(){
+                    document.getElementByID("clicking").innerHTML = "Hide Images"
+                    document.getElementbyId("images").style.display = "block"
+                }
+            </script>
     </head>
     <body>
+       
+       <div class="images" id="images">
         <a href="https://www.imdb.com/title/tt0094715/" target="_blank"></a>
-        <img src= "https://www.katebackdrop.com/products/bh1044050-crashing-waves-beach-sunset?srsltid=AfmBOoppXjHw_1c41ru_Rb-laiep9rmYNxdM7h75NGrvptqxJfz4cHSOalt" alt="Really pretty beach" height="200px">
-       <div class="images">
+            <img src= "https://www.katebackdrop.com/products/bh1044050-crashing-waves-beach-sunset?srsltid=AfmBOoppXjHw_1c41ru_Rb-laiep9rmYNxdM7h75NGrvptqxJfz4cHSOalt" alt="Really pretty beach" height="200px">
             <img src= "https://www.katebackdrop.com/products/bh1044050-crashing-waves-beach-sunset?srsltid=AfmBOoppXjHw_1c41ru_Rb-laiep9rmYNxdM7h75NGrvptqxJfz4cHSOalt" alt="Really pretty beach" height="200px">
        </div>
+       <button type="button" onclick="show()">Show images</button>
     </body>
 </html>
     </head>
