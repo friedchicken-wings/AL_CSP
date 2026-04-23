@@ -18,9 +18,28 @@
             margin: 20px;
             padding: 20px;
         }
-        
     </style>
+    <script>
+         function show_img(){
+                if(document.getElementById("img-wrapper").style.display == "block"){
+                    document.getElementById("img-wrapper").style.display = "none"
+                    document.getElementById("show").innerHTML = "Show Image"
+                }else{
+                document.getElementById("img-wrapper").style.display = "block"
+                document.getElementById("show").innerHTML = "Hide Image"
+                }
+            }
+            function hover(id){
+                document.getElementById("button").style.backgoundColor = "blue"
+                document.getElementById("button").style.color = "cyan"
+            }
+            function unhover(id){
+                document.getElementById(id).style.backgoundColor = "grey"
+                document.getElementById(id).style.color = "black"
+            }
+    </script>
     <body>
+       
         <h1>What kind of famous dishes are there?</h1>
         <div class="split left"><div class="centered">
         <div>
@@ -34,12 +53,18 @@
         <img src="https://www.chinasichuanfood.com/wp-content/uploads/2021/02/red-braised-fish-2.jpg" alt="Hong Shao Yu" width="200px" height="200px">
         <a href="https://www.youtube.com/watch?v=_vpNtb4TFBs&pp=ygUYaG93IHRvIG1ha2UgaG9uZyBzaGFvIHl1" target="_blank">How to make Hong Shao Yu</a>
         </div>
-
+<div>
         <h2>Why is Chinese Food so Popular?</h2>
-        <div>
+        
             <p>The reason why chinese food is so popular now a days is because of how much variety their dishes have. Their easily likeable, affordable, and savory flavors make it very easy for lots of people to like chinese foods. Chinese food is something that is unique from other cultures since they mainly focus on savory and how diverse their techniques they use on their dishes. Not only that, but chinese food is usually known to be served fast since many things in china are fast paced.</p>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd9I1OrU2WhB6WX6tiOXTxvqbH-bYR5fatiw&s" alt="Beijing Kao Ya" width="200px" height="200px">
         <a href="https://www.youtube.com/watch?v=KnJ3abXjgME&pp=ygUaaG93IHRvIG1ha2UgYmVpamluZyBrYW8geWHSBwkJ0woBhyohjO8%3D" target="_blank">How to make Beijing Kao Ya</a></div>
        </div></div>
+        <h1 id="change" onmouseover="popup()">JavaScript Notes</h1>
+        <button onclick="change_color()" onmouseover="hover('button')" id="button">Click me</button>
+        <button onclick="show_img()" id="show" onmouseover="hover('show')">Show Image</button>
+        <div id="img-wrapper">
+            <img src= "https://yhaltamonte.com/wp-content/uploads/2023/01/yummy-hero.jpg" height="200px">
+        </div>
     </body>
 </html>
